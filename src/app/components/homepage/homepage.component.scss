@@ -2,7 +2,13 @@ $max-width: 375px;
 button{
   border-radius: 50px;
 }
+h1, h3{
+  font-weight: normal;
+}
 #user{
+  min-height: 50vh;
+}
+#user > *{
   max-width: $max-width;
   margin: auto;
   padding: 10px;
@@ -13,6 +19,7 @@ button{
 }
 .user-head fa-icon{
   font-size: 40px;
+  color: #3f51b5;
 }
 .user-foot button{
   display: block;
@@ -27,8 +34,20 @@ button{
   background-color: lightgray;
 }
 #info{
+  width: 100%;
+  background-color: #3f51b5;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+}
+#info > *{
   width: $max-width;
   margin: auto;
+  position: relative;
+  bottom: 16px;
+}
+#info *{
+  color: white;
 }
 #info ul{
   list-style-type: none;
@@ -67,5 +86,15 @@ button{
   flex-direction: row-reverse;
   align-items: center;
   height: 100%;
+}
+#user, #info{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-content: center;
+  justify-items: center;
+}
+#info > *{
+  bottom: 0;
 }
 }
