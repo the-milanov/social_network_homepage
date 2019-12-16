@@ -1,0 +1,100 @@
+$max-width: 375px;
+button{
+  border-radius: 50px;
+}
+h1, h3{
+  font-weight: normal;
+}
+#user{
+  min-height: 50vh;
+}
+#user > *{
+  max-width: $max-width;
+  margin: auto;
+  padding: 10px;
+}
+.user-head{
+  display: flex;
+  justify-content: space-between;
+}
+.user-head fa-icon{
+  font-size: 40px;
+  color: #3f51b5;
+}
+.user-foot button{
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+}
+#footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: lightgray;
+}
+#info{
+  width: 100%;
+  background-color: #3f51b5;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+}
+#info > *{
+  width: $max-width;
+  margin: auto;
+  position: relative;
+  bottom: 16px;
+}
+#info *{
+  color: white;
+}
+#info ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#info li{
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+}
+#info fa-icon{
+  font-size: 30px;
+  display: inline-block;
+  width: 50px;
+}
+#info h3{
+  display: inline-block;
+  margin: 0;
+}
+#footer ul{
+  margin: auto;
+  width: fit-content;
+}
+#footer li{
+  list-style-type: none;
+  display: inline-block;
+  padding: 4px;
+  margin: 4px;
+  font-size: 12px;
+  color: gray;
+}
+@media only screen and (min-width: 768px) {
+#container{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  height: 100%;
+}
+#user, #info{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-content: center;
+  justify-items: center;
+}
+#info > *{
+  bottom: 0;
+}
+}
